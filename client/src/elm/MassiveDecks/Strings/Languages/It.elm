@@ -91,6 +91,9 @@ translate _ mdString =
                             [ Text "Spettatori" ]
 
         -- Start screen.
+        DataPrivacy ->
+            [ Text "Protezione dati" ]
+
         Version { versionNumber } ->
             [ Text "Versione “", Text versionNumber, Text "”" ]
 

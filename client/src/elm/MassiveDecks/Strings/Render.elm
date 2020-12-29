@@ -159,6 +159,9 @@ enhanceHtml context mdString unenhanced =
 
         CardsAgainstHumanity ->
             [ Html.blankA [ HtmlA.href "https://cardsagainsthumanity.com/" ] unenhanced ]
+            
+        DataPrivacy ->
+            [ Html.blankA [ HtmlA.href "./privacy.html" ] unenhanced ]
 
         Pick numberOfCards ->
             [ Html.span [ HtmlA.class "instruction", PickDescription numberOfCards |> asString context |> HtmlA.title ] unenhanced ]

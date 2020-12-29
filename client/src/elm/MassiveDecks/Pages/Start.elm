@@ -248,6 +248,9 @@ view shared model =
                 , Html.text "\" "
                 , Strings.Version { versionNumber = Version.version } |> Lang.html shared
                 ]
+            , Html.p [ HtmlA.class "version" ] [
+                Strings.DataPrivacy |> Lang.html shared
+                ]
             ]
         ]
     , shared.sources.manyDecks |> Maybe.map manyDecksAd |> Maybe.withDefault Html.nothing

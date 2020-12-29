@@ -67,6 +67,9 @@ translate maybeDeclCase mdString =
             [ Text (decl noun quantity declCase) ]
 
         -- Start screen.
+        DataPrivacy ->
+            [ Text "Ochrona danych" ]
+
         Version { versionNumber } ->
             [ Text "Wersja „", Text versionNumber, Text "”" ]
 

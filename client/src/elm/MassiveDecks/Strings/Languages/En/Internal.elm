@@ -46,6 +46,9 @@ translate _ mdString =
             List.concat [ singular, plural ]
 
         -- Start screen.
+        DataPrivacy ->
+            [ Text "Data Privacy" ]
+
         Version { versionNumber } ->
             [ Text "Version “", Text versionNumber, Text "”" ]
 

@@ -58,6 +58,7 @@ type MdString
     | ShortGameDescription -- A one-line description of the game.
     | WhatIsThis -- A title for a section describing the game.
     | GameDescription -- A long description of the game.
+    | DataPrivacy -- The word data privacy.
     | NewGame -- The action of creating a new game. (Short, ideally one word).
     | NewGameDescription -- A description of starting a new game.
     | FindPublicGame -- The action of finding a public game to join. (Short, ideally one word).
